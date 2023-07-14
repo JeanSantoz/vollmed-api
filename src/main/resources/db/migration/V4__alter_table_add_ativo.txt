@@ -1,0 +1,2 @@
+alter table Medicos add column ativo smallint;
+update Medicos set ativo = 1;

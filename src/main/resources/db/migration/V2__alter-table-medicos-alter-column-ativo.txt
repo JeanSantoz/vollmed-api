@@ -1,0 +1,1 @@
+alter table Medicos alter column ativo type smallint;

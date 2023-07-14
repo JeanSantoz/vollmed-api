@@ -20,12 +20,46 @@ public class Endereco {
     private String complemento;
 
     public Endereco(EnderecoDto enderecoDto) {
-        logradouro = enderecoDto.logradouro();
-        bairro = enderecoDto.bairro();
-        cep = enderecoDto.cep();
-        cidade = enderecoDto.cidade();
-        uf = enderecoDto.uf();
-        numero = enderecoDto.numero();
-        complemento = enderecoDto.complemento();
+        this.logradouro = enderecoDto.logradouro();
+        this.bairro = enderecoDto.bairro();
+        this.cep = enderecoDto.cep();
+        this.cidade = enderecoDto.cidade();
+        this.uf = enderecoDto.uf();
+        this.numero = enderecoDto.numero();
+        this.complemento = enderecoDto.complemento();
     }
+    public void update(EnderecoDto enderecoDto) {
+
+        if(enderecoDto.logradouro() != null){
+            this.logradouro = enderecoDto.logradouro();
+        }
+
+        if(enderecoDto.bairro() != null){
+            this.bairro = enderecoDto.bairro();
+        }
+
+        if(enderecoDto.cep() != null){
+            this.cep = enderecoDto.cep();
+        }
+
+        if(enderecoDto.cidade() != null){
+            this.cidade = enderecoDto.cidade();
+        }
+
+        if(enderecoDto.uf() != null){
+            this.uf = enderecoDto.uf();
+        }
+
+        if(enderecoDto.numero() != null){
+            this.numero = enderecoDto.numero();
+        }
+
+        if(enderecoDto.complemento() != null){
+            this.complemento = enderecoDto.complemento();
+        }
+
+
+    }
+
+
 }

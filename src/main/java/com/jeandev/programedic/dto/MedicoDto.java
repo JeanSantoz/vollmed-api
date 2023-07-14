@@ -7,6 +7,8 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
 public record MedicoDto(
+
+        Long id,
         @NotBlank
         String nome,
         @NotBlank @Email
@@ -19,4 +21,5 @@ public record MedicoDto(
         Especialidade especialidade,
         @NotNull @Valid
         EnderecoDto endereco) {
+
 }
